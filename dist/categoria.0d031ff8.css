@@ -294,6 +294,7 @@ body {
   }
 
   .category > div {
+    background-color: #f4f6f7;
     flex: 0 0 42%;
   }
 
@@ -309,6 +310,7 @@ body {
   }
 
   .category > div {
+    background-color: #f4f6f7;
     flex: 0 0 29%;
   }
 }
