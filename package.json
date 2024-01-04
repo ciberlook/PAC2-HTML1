@@ -28,6 +28,7 @@
     "stylelint-config-standard": "^34.0.0"
   },
   "dependencies": {
-    "icomoon": "^1.0.0"
+    "icomoon": "^1.0.0",
+    "react-youtube-lite": "^2.0.0"
   }
 }
