@@ -1,7 +1,31 @@
-window.addEventListener("load", ()=>{
-    const carrusel = document.querySelectorAll(".carrusel");
-    carrusel[0].innerHTML = '<iframe loading="lazy" src="https://www.youtube.com/embed/8pN96nOt31g?si=Cw07FlkWawmtdwpu" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    <iframe loading="lazy" src="https://www.youtube.com/embed/IJYNJsEB2uk?si=iKi3FYvdjV3tFV8L" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    <iframe loading="lazy" src="https://www.youtube.com/embed/q6iI1iSdXGM?si=kv4-m5FjwQwaWuGI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><figcaption class="centre">Bloopers o tomas falsas de la serie Startrek Voyager</figcaption>';
-    carrusel[1].innerHTML = '<iframe loading="lazy" src="https://www.youtube.com/embed/sXXWrW6DiJA?si=luoTW4dY1caxoXbw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><figcaption class="carrusel--max560"><em>Fijate en como disfruta de la tarta!!. Desde luego, tras ver esta peculiar escena, no creo que Siete de Nueve vuelva a decir: <q>La resistencia es inutil...</q>. \xbfQui\xe9n se resiste a una tarta de queso?</em></figcaption>';
-}, false);
+window.addEventListener("load", cargarVideos(), false);
+async function cargarVideos() {
+    const video11 = document.querySelector("#video1");
+    const video21 = document.querySelector("#video2");
+    const video31 = document.querySelector("#video3");
+    const video41 = document.querySelector("#video4");
+    Promise.all([
+        cargarVideo1(),
+        cargarVideo2(),
+        cargarVideo3(),
+        cargarVideo4()
+    ]);
+    cargarVideo1();
+    cargarVideo2();
+    cargarVideo3();
+    cargarVideo4();
+}
+async function cargarVideo1() {
+    video1.src = "https://www.youtube.com/embed/8pN96nOt31g?si=Cw07FlkWawmtdwpu";
+}
+async function cargarVideo2() {
+    video2.src = "https://www.youtube.com/embed/IJYNJsEB2uk?si=iKi3FYvdjV3tFV8L";
+}
+async function cargarVideo3() {
+    video3.src = "https://www.youtube.com/embed/q6iI1iSdXGM?si=kv4-m5FjwQwaWuGI";
+}
+async function cargarVideo4() {
+    video4.src = "https://www.youtube.com/embed/sXXWrW6DiJA?si=luoTW4dY1caxoXbw";
+}
 
 //# sourceMappingURL=outtakes.3e5e771f.js.map
