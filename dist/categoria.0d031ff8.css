@@ -302,4 +302,15 @@ body {
   }
 }
 
+@media screen and (width >= 1025px) {
+  .category {
+    max-width: 1225px;
+    margin: 0 auto;
+  }
+
+  .category > div {
+    flex: 0 0 29%;
+  }
+}
+
 /*# sourceMappingURL=categoria.0d031ff8.css.map */
